@@ -67,25 +67,68 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Cardo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./">
   </head>
   <style>
      .deleteCard {
     display:none;
   }
+  .jumbotron {
+    background-image:url("https://images.pexels.com/photos/2007401/pexels-photo-2007401.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  background-size: cover;
+  color: #341F28;
+
+  }
+  .jumbotron h1 {
+    font-weight: bold;
+  }
+  .jumbotron p {
+    color: #112033;
+    font-weight: 400;
+  }
+  .btn {
+    background-color:#381F25;
+    color: white;
+    border-color: #381F25;
+  }
+  .btn:hover {
+    background-color: white;
+    color: #6f3d48;
+  }
+  .hideBtn {
+    background-color: white;
+    color: #381F25;
+    font-size: 1.2rem;
+    border: none;
+    font-style: italic;
+  }
+  .cardImg {
+    overflow: hidden;
+  }
+  .card-img-top {
+    transition: transform .4s; 
+  }
+  .card-img-top:hover {
+ 
+	transform: scale(1.3);
+	transform-origin: 50% 50%;
+
+  }
   </style>
  
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <img src="./9368407454443561ac004d20786d4b43-grid-on-globe-icon-by-vexels.png" style="width: 2rem;"/>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
+
           <li class="nav-item">
             <a class="nav-link" href="#week">Deals ofThe week</a>
           </li>
@@ -101,231 +144,278 @@
     </nav>
     <div class="container-fluid">
       <div class="jumbotron">
-      <h1 class="display-4">AvilTravel</h1>
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-      <hr class="my-4">
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Leran more</a>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Sign Up</a>
+        <h1 class="display-4">AvilTravel</h1>
+        <p class="lead">We are the first to create Insider Experiences; enabling our guests
+           to appreciate their destination through genuine local experiences, such as dining with locals in their homes.</p>
+        <hr class="my-4">
+        <p>We look very much forward to serve you</p>
+        <a class="btn  btn-lg" href="#" role="button">Leran more</a>
+        <a class="btn  btn-lg" href="#" role="button">Sign Up</a>
       </div>
-      <div class="container weekDeals" style="display:block">
-        
+
+
+      <div class="container content" style="display:block">
         <p id="week" class="display-4 text-center">Deals of the Week</p>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
           <div class="col">
             <div class="card my-2">
-              <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" class="card-img-top" alt="...">
+              <div class="cardImg">
+                 <img src="https://d3hne3c382ip58.cloudfront.net/resized/373x212/pearls-of-the-adriatic-south-lower-tour-2-30739_1581306669.JPG" class="card-img-top" alt="...">
+              </div>
+             
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Pearls Of The Adriatic </h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn ">read more</a>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card my-2">
-              <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" class="card-img-top" alt="...">
+              <div class="cardImg">
+              <img src="https://d3hne3c382ip58.cloudfront.net/resized/373x212/georgia-and-armenia-uncovered-tour-2-27689_1578458643.JPG" class="card-img-top" alt="...">
+              </div>
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Georgia And Armenia</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn ">read more</a>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card my-2">
-              <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" class="card-img-top" alt="...">
+              <div class="cardImg">
+              <img src="https://d3hne3c382ip58.cloudfront.net/resized/373x212/riviera-explorer-tour-2-27597_1578458667.JPG" class="card-img-top" alt="...">
+              </div>
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Riviera Explorer</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn ">read more</a>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card my-2">
-              <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" class="card-img-top" alt="...">
+              <div class="cardImg">
+              <img src="https://d3hne3c382ip58.cloudfront.net/resized/373x212/capitals-of-scandinavia-tour-2-27593_1580444069.JPG" class="card-img-top" alt="...">
+              </div>
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Capitals Of Scandinavia</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn ">read more</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <button type="button" class="btn btn-outline-primary my-3 btn1" style="margin-left:50% ;width: 10rem;">Hide </button>
-        <div class="container-fluid">
+      <button type="button" class="btn  my-3 hideBtn" style="margin-left:70% ;width: 15rem;">Hide</button>
+
+
+
+
+      <div class="container-fluid content" style="display:block">
            <p id="summer" class="display-4 text-center">Welcome Summer</p>
-        
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6">
           <div class="col">
             <div class="card my-2 shadow-lg">
+              <div class="cardImg">
               <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" class="card-img-top" alt="...">
+              </div>
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn ">read more</a>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card my-2 shadow-lg">
-              <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" class="card-img-top" alt="...">
+              <div class="cardImg">
+                <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" class="card-img-top" alt="...">
+                </div>
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn ">read more</a>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card my-2 shadow-lg">
-              <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" class="card-img-top" alt="...">
+              <div class="cardImg">
+                <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" class="card-img-top" alt="...">
+                </div>
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn ">read more</a>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card my-2 shadow-lg">
-              <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" class="card-img-top" alt="...">
+              <div class="cardImg">
+                <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" class="card-img-top" alt="...">
+                </div>
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn ">read more</a>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card my-2 shadow-lg">
-              <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" class="card-img-top" alt="...">
+              <div class="cardImg">
+                <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" class="card-img-top" alt="...">
+                </div>
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn ">read more</a>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card my-2 shadow-lg">
-              <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" class="card-img-top" alt="...">
+              <div class="cardImg">
+                <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" class="card-img-top" alt="...">
+                </div>
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn ">read more</a>
               </div>
             </div>
           </div>
         </div>
         </div>
-        <button type="button" class="btn btn-outline-primary my-3 btn2" style="margin-left:50% ;width: 10rem;">Hide </button>
-        <div class="d-none d-md-block">
-            <div class="container my-3">
+        <button type="button" class="btn  my-3 hideBtn" style="margin-left:70% ;width: 15rem;">Hide</button>
+
+
+
+        <div class="d-none d-md-block " >
+            <div class="container my-3 content" style="display:block">
             <p id="day" class="display-4 text-center ">Deal of the Day</p>
             <div class="row ">
-              <div class="col-8">
-                <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" style="width: 25rem;" alt="">
+              <div class="col-8 col-md-12 col-lg-8 shadow-lg">
+                <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" class="img-fluid"  alt="">
               </div>
-              <div class="col-4">
-                <p>Name</p>
-                <p>Price</p>
-                <p>Dates</p>
-                <p>Description</p>
+              <div class="col-4 col-md-12 col-lg-4 shadow-lg" style="background-color: #e1c8ce; color:#381F25">
+                <p class="display-4">Barcelona</p>
+                <p>500 Eur</p>
+                <p>The Barcelona Explorer trip starts and ends in Barcelona. It is a city sightseeing tour that takes 8 days taking you through Montserrat, Barcelona and Montjuïc in Spain. Barcelona Explorer is a guided group trip that includes accommodation in hotels, transport, meals and others.
+
+                  From the fanciful façades of Gaudí to the favourite footballer haunts of Maradona and Messi, Barcelona serves up a sultry Spanish experience that will tease your every sense.</p>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="btn btn-outline-primary my-3 btn3" style="margin-left:50% ;width: 10rem;">Hide </button>
-        <div class="container-fluid">
+        <button type="button" class="btn  my-3 hideBtn" style="margin-left:70% ;width: 15rem;">Hide</button>
+
+
+
+        <div class="container-fluid content" style="display:block">
           <p class="display-4 text-center">More destinations</p>
           <div class="row  row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6">
             
               <div class="card">
-                <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" class="card-img-top" alt="...">
+                 <div class="cardImg">
+              <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" class="card-img-top" alt="...">
+              </div>
               </div>
               <div class="card">
-                <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" class="card-img-top" alt="...">
+                 <div class="cardImg">
+              <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" class="card-img-top" alt="...">
+              </div>
               </div>
               <div class="card">
-                <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" class="card-img-top" alt="...">
+                 <div class="cardImg">
+              <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" class="card-img-top" alt="...">
+              </div>
               </div>
               <div class="card">
-                <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" class="card-img-top" alt="...">
+                 <div class="cardImg">
+              <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" class="card-img-top" alt="...">
+              </div>
               </div>
               <div class="card">
-                <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" class="card-img-top" alt="...">
+                 <div class="cardImg">
+              <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" class="card-img-top" alt="...">
+              </div>
               </div>
               <div class="card">
-                <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" class="card-img-top" alt="...">
+                 <div class="cardImg">
+              <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" class="card-img-top" alt="...">
+              </div>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="btn btn-outline-primary my-3 btn4" style="margin-left:50% ;width: 10rem;">Hide </button>
+        <button type="button" class="btn  my-3 hideBtn" style="margin-left:70% ;width: 15rem;">Hide </button>
 
-        <div class="container-fluid my-4">
+        <div class="container-fluid my-4 content" style="display:block">
           <p class="display-4 text-center">Customers' reviews</p>
-          <div class="row">
-            <div class="col-3">
-          
-              <img src="./c81f09d36451a030f40f459726f31a96-barcelona.jpeg" style="width:24rem;"/>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3">
+            <div class="col">
+              <img src="https://d3hne3c382ip58.cloudfront.net/resized/750x420/rhineland-and-dutch-christmas-tour-2-516517_1584591836.JPG" class="img-fluid" />
             </div>
-            <div class="col-3" >
+            <div class="col" >
                   <div style="display: flex; align-items: center; ">
                     <span>5 stars</span>
                     <div class="progress mx-2" style="width: 85%;" >
-                      <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                      <div class="progress-bar" role="progressbar" style="width: 60%; background-color: #381F25;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
                     </div>
                   </div>
                   <div style="display: flex; align-items: center; ">
                     <span>4 stars</span>
                     <div class="progress mx-2" style="width: 85%;" >
-                      <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="20">25%</div>
+                      <div class="progress-bar" role="progressbar" style="width: 20%; background-color: #381F25;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="20">25%</div>
                     </div>
                   </div>
                   <div style="display: flex; align-items: center; ">
                     <span>3 stars</span>
                     <div class="progress mx-2" style="width: 85%;" >
-                      <div class="progress-bar" role="progressbar" style="width: 7%;" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100">7%</div>
+                      <div class="progress-bar" role="progressbar" style="width: 7%; background-color: #381F25;" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100">7%</div>
                     </div>
                   </div>
                   <div style="display: flex; align-items: center; ">
                     <span>2 stars</span>
                     <div class="progress mx-2" style="width: 85%;" >
-                      <div class="progress-bar" role="progressbar" style="width: 3%;" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100">3%</div>
+                      <div class="progress-bar" role="progressbar" style="width: 3%; background-color: #381F25;" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100">3%</div>
                     </div>
                   </div>
                   <div style="display: flex; align-items: center; ">
                     <span>1 stars</span>
                     <div class="progress mx-2" style="width: 85%;" >
-                      <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="10">25%</div>
+                      <div class="progress-bar" role="progressbar" style="width: 10%; background-color: #381F25;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="10">25%</div>
                     </div>
                   </div>
                   <div style="display: flex; align-items: center; ">
                     <span>0 stars</span>
                     <div class="progress mx-2" style="width: 85%;" >
-                      <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                      <div class="progress-bar" role="progressbar" style="width: 0%; background-color: #381F25;s" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
                     </div>
                   </div>
               </div>
-              
-            <div class="col-6">
+            
+            <div class="col">
               <div>
                 <p class="h6">Tetiana Yremko</p>
-                <p> Content</p>
+                <p> Booking the tour was an efficient and easy process. However my tour was cancelled by the operator a few days before I
+                   was due to travel due to COVID-19 virus restrictions. One week later Bookmundi has refunded my deposit in full. 
+                   Given the current collapse of tourism in this crisis, Bookmundi has acted swiftly and responsibly. 
+                   I wish I could say the same about Booking.com who are being very difficult with so called "non-refundable" bookings. </p>
               </div>
               <div>
                 <p class="h6">Mandeep Sai</p>
-                <p> Content</p>
+                <p> Booking the tour was an efficient and easy process. However my tour was cancelled by the operator a few days before I was due to travel due to COVID-19 virus restrictions. One week later Bookmundi has refunded my deposit in full.</p>
               </div>
 
             </div>
           </div>
         </div>
-        <button type="button" class="btn btn-outline-primary my-3 btn5" style="margin-left:50% ;width: 10rem;">Hide </button>
+        <button type="button" class="btn  my-3 hideBtn" style="margin-left:70% ;width: 15rem;">Hide </button>
         
         <div class="modal" id="modal" tabindex="-1" role="dialog">
           <div class="modal-dialog" role="document">
@@ -341,7 +431,7 @@
                <textarea type="text" placeholder="Your message"></textarea>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Send</button>
+                <button type="button" class="btn ">Send</button>
               </div>
             </div>
           </div>
@@ -360,28 +450,62 @@
       
     </div>
     <script>
-      var button1 = document.querySelector('.btn1')
-      var button2 = document.querySelector('.btn2')
-      var button3 = document.querySelector('.btn3')
-      var button4 = document.querySelector('.btn4')
-      var button5 = document.querySelector('.btn5')
 
+      var buttons = document.querySelectorAll('.hideBtn')
+      var contents=document.querySelectorAll('.content')
 
-      function hideOrShow(){
-        let cont1 = document.querySelector('.weekDeals')
-        if(cont1.style.display === 'block'){
-          cont1.style.display = 'none'
-          button1.innerText = 'Show'
-        }else{
-          cont1.style.display = 'block'
-          button1.innerText = "Hide"
+        window.onload = function(){
+          getAllTravels();
+
+          for(let i=0;i<5;i++){
+            buttons[i].onclick = function(){
+              if(contents[i].style.display === 'block'){
+                contents[i].style.display = 'none'
+                buttons[i].innerText = 'Show'
+              }else{
+                contents[i].style.display = 'block'
+                buttons[i].innerText = "Hide"
+              }
+            }
+          }
         }
-      }
 
-      button1.addEventListener('click',hideOrShow)
-      button1.addEventListener('click',hideOrShow)
-      button1.addEventListener('click',hideOrShow)
-      button1.addEventListener('click',hideOrShow)
+
+
+
+    // function hideOrShow (i) {
+
+  
+    //     if(contents[i].style.display==='block') {
+    //       contents[i].style.display='none'
+    //       buttons[i].innerText='Show'
+    //     }else {
+    //       contents[i].style.display='block'
+    //       buttons[i].innerText='Hide'
+    //     }
+      
+    // }
+    // function hideOnClick () {
+    
+    //   for(let i=0; i<buttons.length; i++)  {
+    //     buttons[i].addEventListener('click', hideOrShow)
+    //   }
+    // }
+
+
+
+      // function hideOrShow(){
+      //   let cont1 = document.querySelector('.weekDeals')
+      //   if(cont1.style.display === 'block'){
+      //     cont1.style.display = 'none'
+      //     button1.innerText = 'Show'
+      //   }else{
+      //     cont1.style.display = 'block'
+      //     button1.innerText = "Hide"
+      //   }
+      // }
+
+      
 
       function getAllTravels() {
         let travels=document.querySelectorAll(".card");
@@ -407,12 +531,7 @@
           });
         }
 
-      window.onload =function (event) {
-        getAllTravels();
-
-        //deleteAllCard()
-
-      }
+  
     </script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
